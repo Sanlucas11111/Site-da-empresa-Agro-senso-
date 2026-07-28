@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AGRO-SENSO - Monitoramento Inteligente de solo e umidade em Petrolina e região. Aumente sua produtividade agrícola com tecnologia de ponta.">
+    <meta name="keywords" content="agro-senso, monitoramento inteligente, umidade do solo, agricultura de precisão, petrolina, sensores agrícolas">
+    <meta name="author" content="Agro-Senso">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AGRO-SENSO | Monitoramento Inteligente de Solo">
+    <meta property="og:description" content="Tecnologia de ponta para aumentar a produtividade do seu solo em Petrolina e região.">
+    <meta property="og:image" content="images/Bannel.webp">
+    <title>AGRO-SENSO | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-leaf"></i> AGRO-SENSO</h1>
+
+        <nav style="display: flex; align-items: center; gap: 20px;">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+
+            <a href="painel/painel_pc.html"><i class="fa-solid fa-chart-line"></i> Acessar Painel</a>
+
+            <a href="institucional/sobre.html"><i class="fa-solid fa-users"></i> Sobre</a>
+            <a href="loja/assinatura.html"><i class="fa-solid fa-star"></i> Assinaturas</a>
+
+            <div id="header-user-area" style="border-left: 1px solid rgba(255,255,255,0.3); padding-left: 20px; display: flex; align-items: center;">
+                <a href="auth/login.html" class="btn-login" style="text-decoration: none; color: white; font-weight: bold;">
+                    <i class="fa-solid fa-circle-user"></i> Entrar
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" style="background-image: url('images/Bannel.webp'); padding: 140px 20px; text-align: center; background-size: cover; background-position: center;">
+        <div class="hero-content">
+
+            <h2 style="color: #2E7D32; font-size: 3.5rem; font-weight: 800; text-shadow: 2px 2px 5px rgba(26, 204, 106, 0.9); margin-bottom: 15px;">
+                Monitoramento Inteligente
+            </h2>
+
+            <p style="color: #000000; font-size: 1.25rem; font-weight: 700; text-shadow: 1px 1px 4px #1b5e20; max-width: 700px; margin: 0 auto 35px auto;">
+                Tecnologia de ponta para aumentar a produtividade do seu solo em Petrolina e região.
+            </p>
+
+            <a href="#" onclick="acessarPainel(event)" class="btn" style="margin-top:20px;">
+                <i class="fa-solid fa-arrow-right"></i> Ir para o App
+            </a>
+
+        </div>
+    </section>
+
+    <div class="container" style="margin-top: 50px; margin-bottom: 20px;">
+        <h2 class="section-title" style="font-size: 1.8rem;">Por que escolher a Agro-Senso?</h2>
+        <div class="cards" style="gap: 20px;">
+            <div style="text-align: center; flex: 1; min-width: 250px; padding: 20px;">
+                <i class="fa-solid fa-crosshairs" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: #333;">Alta Precisão</h3>
+                <p style="color: #666;">Sensores calibrados para ler a umidade do solo com exatidão milimétrica.</p>
+            </div>
+            <div style="text-align: center; flex: 1; min-width: 250px; padding: 20px;">
+                <i class="fa-solid fa-hand-holding-dollar" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: #333;">Economia Real</h3>
+                <p style="color: #666;">Reduza o desperdício de água e fertilizantes aplicando apenas o necessário.</p>
+            </div>
+            <div style="text-align: center; flex: 1; min-width: 250px; padding: 20px;">
+                <i class="fa-solid fa-mobile-screen-button" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: #333;">Controle Total</h3>
+                <p style="color: #666;">Monitore sua plantação de qualquer lugar através do nosso aplicativo.</p>
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid #51cf16; margin: 40px 0;">
+    </div>
+
+    <div class="container" id="produtos">
+        <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Nossos Equipamentos</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="images/fixo.webp" alt="Sensor Fixo Station">
+                <h3>Sensor Fixo Station</h3>
+                <p>Monitoramento contínuo 24h.</p>
+
+                <p style="font-size: 0.9rem; color: #888; margin-top: 10px;">
+                    A partir de <strong style="color: var(--primary-color); font-size: 1.1rem;">R$ 850,00</strong>
+                </p>
+
+                <a href="#" onclick="verificarAcessoCompra(event, 'Sensor Fixo')" class="btn" style="margin-top: 15px;">
+                    <i class="fa-solid fa-cart-plus"></i> Comprar
+                </a>
+            </div>
+
+            <div class="card">
+                <img src="images/movel.webp" alt="Sensor Móvel Go">
+                <h3>Sensor Móvel Go</h3>
+                <p>Portabilidade total no campo.</p>
+
+                <p style="font-size: 0.9rem; color: #888; margin-top: 10px;">
+                    A partir de <strong style="color: var(--primary-color); font-size: 1.1rem;">R$ 420,00</strong>
+                </p>
+
+                <a href="#" onclick="verificarAcessoCompra(event, 'Sensor Móvel')" class="btn" style="margin-top: 15px;">
+                    <i class="fa-solid fa-cart-plus"></i> Comprar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 AGRO-SENSO | Tecnologia para o campo.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Início do Assistente IA (Mock) -->
+    <div class="ai-chat-widget">
+        <button id="ai-chat-btn" class="ai-chat-btn" onclick="toggleAIChat()">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <div id="ai-chat-window" class="ai-chat-window hidden">
+            <div class="ai-chat-header">
+                <h3><i class="fa-solid fa-robot"></i> Assistente Virtual</h3>
+                <button onclick="toggleAIChat()" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="ai-chat-body" class="ai-chat-body">
+                <!-- Mensagens aparecerão aqui -->
+            </div>
+            <div class="ai-chat-footer">
+                <input type="text" id="ai-chat-input" placeholder="Digite sua mensagem..." onkeypress="handleAIAssistantKeyPress(event)">
+                <button id="ai-send-btn" onclick="sendAIMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do Assistente IA -->
+
+</body>
+</html>
